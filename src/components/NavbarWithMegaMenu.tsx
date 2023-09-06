@@ -114,7 +114,7 @@ export function NavbarWithMegaMenu({ navListMenu }: { navListMenu: any[] }) {
               </ListItem>
             </Typography>
           </MenuHandler>
-          <MenuList className="hidden max-w-screen-xl xxx rounded-xl lg:block">
+          <MenuList className="hidden max-w-screen-xl menulist-bg rounded-xl lg:block">
             {renderItems}
           </MenuList>
         </Menu>
@@ -170,7 +170,7 @@ export function NavbarWithMegaMenu({ navListMenu }: { navListMenu: any[] }) {
             </IconButton>
           </div>
           <Collapse in={openNav} timeout="auto">
-            <div className="oho">
+            <div className="my-collapse">
               {navListMenu.map((x) => (
                 <NavListMenu label={x.label} navListMenuItems={x.menulist} />
               ))}

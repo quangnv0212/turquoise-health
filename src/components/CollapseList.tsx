@@ -55,7 +55,7 @@ export function CollapseList(props: ICollapseListProps) {
               {dataCollapse.map((x) => (
                 <>
                   <ListItemButton
-                    className="w-full text-2xl font-bold abc"
+                    className="w-full text-2xl font-bold collapse-item"
                     onClick={() => setActive(x)}
                   >
                     {x.title}
@@ -77,50 +77,5 @@ export function CollapseList(props: ICollapseListProps) {
         </div>
       </Section>
     </>
-    // <div className="">
-    //   <p className="w-1/2 mb-0 text-5xl font-bold m-28">
-    //     Shop healthcare just like anything else.
-    //   </p>
-    //   <div className="flex flex-row gap-6 mt-10 m-28">
-    //     <div className="w-1/2 mt-0 ">
-    //       <p>
-    //         It's your right to know the cost of healthcare. Take advantage of
-    //         hospital price transparency by comparing the costs of services and
-    //         providers near you.
-    //       </p>
-    //     </div>
-    //     <div className="flex flex-row items-end justify-end w-1/2">
-    //       <button className="text-white bg-[#196E6F] rounded-3xl px-4 py-2 font-bold">
-    //         Search Care
-    //       </button>
-    //     </div>
-    //   </div>
-    //   <div className="flex flex-row mx-28 gap-7">
-    //     <div className="">
-    //       <img src={active.img} alt="" />
-    //     </div>
-    //     <div className="">
-    //       <List
-    //         sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
-    //         component="nav"
-    //         aria-labelledby="nested-list-subheader"
-    //       >
-    //         {dataCollapse.map((x) => (
-    //           <>
-    //             <ListItemButton className="abc" onClick={() => setActive(x)}>
-    //               {x.title}
-    //               {x.id === active.id ? <span>-</span> : <span>+</span>}
-    //             </ListItemButton>
-    //             <Collapse in={x.id === active.id} timeout="auto" unmountOnExit>
-    //               <List component="div" disablePadding>
-    //                 {x.desc}
-    //               </List>
-    //             </Collapse>
-    //           </>
-    //         ))}
-    //       </List>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }

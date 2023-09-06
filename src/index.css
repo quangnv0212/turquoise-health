@@ -1,17 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-    font-family: "HK Grotesk Bold";
-}
+
 .menu-item {
     border-bottom:1px solid #E3E6EB;
 } 
-.xxx {
+.menulist-bg {
     background-color: white;
 }
 
-.oho {
+.my-collapse {
     background-color: white;
     border-radius: 5px;
     padding: 25px;
@@ -67,9 +65,8 @@ body {
 .swiper-button-prev, .swiper-button-next {
     z-index: 100000 !important; 
 }
-.abc {
+.collapse-item {
     border-top: 1px solid #DCDFE4 !important;
-    /* display: block; */
     padding: 24px 48px 24px 12px !important;
     width: 100%;
     max-width: 1000px !important;
@@ -82,10 +79,7 @@ body {
     display: flex;
     justify-content: space-between !important;
 }
-.hhh {
-border-bottom: 1px solid #DCDFE4 !important;
-padding: 16px;
-}
+
 .jointeam {
     background: linear-gradient(90deg, #A8E6E1 0%, #EEC0AE 100%);
 }
