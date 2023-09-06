@@ -16,7 +16,7 @@ export function Intro(props: IIntroProps) {
             food without knowing the cost, you shouldn’t just pay for
             healthcare.
           </p>
-          <div className="flex flex-row w-[900px] items-center justify-center gap-3 p-4 text-black bg-white border rounded-xl ">
+          <div className="flex flex-row w-[1000px] items-center justify-center gap-3 p-4 text-black bg-white border rounded-xl ">
             <SearchIcon></SearchIcon>
             <input
               type="text"
@@ -27,7 +27,7 @@ export function Intro(props: IIntroProps) {
             <input
               type="text"
               placeholder="Enter location or provider name"
-              className="p-2 outline-0"
+              className="w-full p-2 outline-0"
             />
             <button className="text-white bg-[#176F6F] p-2 rounded-2xl px-7 font-bold">
               Search
