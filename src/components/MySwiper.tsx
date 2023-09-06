@@ -23,7 +23,9 @@ export default function MySwiper({
   return (
     <div className="flex flex-col gap-10 my-16">
       <div className="flex flex-row justify-between">
-        <p className="text-5xl font-bold">{title}</p>
+        <p className="text-5xl font-bold header-intro text-[#02363D] ">
+          {title}
+        </p>
         <button className="text-white bg-[#196E6F] rounded-3xl px-4 py-2 font-bold">
           View All
         </button>
@@ -46,6 +48,7 @@ export default function MySwiper({
                 image={x.image}
                 name={x.name}
                 letter={x.letter}
+                verify={x.verify}
               />
             </SwiperSlide>
           ))}

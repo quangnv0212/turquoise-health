@@ -6,9 +6,10 @@ export interface ICustomerProps {}
 export function Customer(props: ICustomerProps) {
   return (
     <Section
-      bg="bg-[#02363d] text-white"
+      bg="bg-[#02363d]"
       title="Our customers speak for themselves."
       buttonText="Press Media"
+      text="text-white"
       desc="Turquoise Health was created for patients, so we love it when they say nice things about us. We also love it when they mention us in articles, media, and academic studies."
     >
       <div className="flex">

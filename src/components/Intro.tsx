@@ -6,9 +6,9 @@ export interface IIntroProps {}
 export function Intro(props: IIntroProps) {
   return (
     <>
-      <div className="bg-[#01363D] intro flex justify-between px-52 py-28 pb-0 text-white">
+      <div className="bg-[#01363D] h-[644px] relative intro px-52 py-28 pb-0 text-white z-10">
         <div className=" text-white flex flex-col gap-10 w-[800px]">
-          <p className="font-bold text-white text-7xl ">
+          <p className="text-white header-intro text-7xl ">
             You can put a price on healthcare.
           </p>
           <p>
@@ -16,7 +16,7 @@ export function Intro(props: IIntroProps) {
             food without knowing the cost, you shouldn’t just pay for
             healthcare.
           </p>
-          <div className="flex flex-row items-center justify-center gap-3 p-4 text-black bg-white border rounded-xl ">
+          <div className="flex flex-row w-[900px] items-center justify-center gap-3 p-4 text-black bg-white border rounded-xl ">
             <SearchIcon></SearchIcon>
             <input
               type="text"
@@ -27,7 +27,7 @@ export function Intro(props: IIntroProps) {
             <input
               type="text"
               placeholder="Enter location or provider name"
-              className="w-full p-2 outline-0"
+              className="p-2 outline-0"
             />
             <button className="text-white bg-[#176F6F] p-2 rounded-2xl px-7 font-bold">
               Search
@@ -36,6 +36,7 @@ export function Intro(props: IIntroProps) {
         </div>
         <img
           src="https://static.turquoise.health/static/images/new-home-bannerImage.92c4de7d77ec.png"
+          className="absolute top-0 right-44 -z-10 "
           alt=""
         />
       </div>

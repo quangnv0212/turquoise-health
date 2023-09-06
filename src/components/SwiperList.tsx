@@ -35,6 +35,7 @@ const dataprovider = [
       "https://ucarecdn.com/05e498a4-07e8-4b18-acd5-3375dba6cfb5/-/resize/72x72/",
     name: "Paloma Health",
     text: "New York, NY",
+    verify: true,
   },
   {
     id: 2,

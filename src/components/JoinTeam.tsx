@@ -24,28 +24,29 @@ export function JoinTeam(props: IJoinTeamProps) {
             </button>
           </div>
         </div>
-        <div className="bg-[#01363D] flex text-white p-28 justify-center items-center flex-row gap-7 px-52">
+        <div className="bg-[#01363D] grid grid-cols-2 text-white p-28 pt-40  gap-7 px-52">
           <div className="flex flex-col gap-4 w-[400px]">
-            <p className="text-4xl font-bold">Stay updated.</p>
+            <p className="text-4xl font-bold header-intro">Stay updated.</p>
             <p className="">
               We have a lot to say about healthcare. But instead of shouting
               from the rooftops, we use email.
             </p>
           </div>
-          <div className="flex flex-row items-center justify-center gap-5">
-            <div className="">
+          <div className="grid items-center grid-cols-2 gap-5">
+            <div className="w-full">
               <input
-                className="p-2 outline-0 rounded-3xl"
+                className="py-2 px-5 w-[300px] outline-0 rounded-3xl"
                 type="text"
                 name=""
                 id=""
                 placeholder="Email address..."
               />
             </div>
-
-            <button className="px-5 py-2  font-bold text-black rounded-3xl bg-[#A8E6E1]">
-              Submit
-            </button>
+            <div className="">
+              <button className="px-5 py-2 font-bold text-black rounded-3xl bg-[#A8E6E1]">
+                Submit
+              </button>
+            </div>
           </div>
         </div>
       </div>
