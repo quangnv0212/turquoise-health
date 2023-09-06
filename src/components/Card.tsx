@@ -25,7 +25,7 @@ export function Card({
 }: ICardProps) {
   return (
     <div className="flex flex-col items-center justify-center gap-5 bg-white p-5 border text-center hover:border-[#0D5256] ">
-      {title && <p className=" card-title">{title}</p>}
+      {title && <p className="font-semibold  card-title">{title}</p>}
       {image && <img src={image}></img>}
       {letter && (
         <p className="flex text-[#E29578] font-bold items-center justify-center w-20 h-20 text-5xl bg-[#FFDDD2] rounded-full text-orange-50">
