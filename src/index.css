@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: "HK Grotesk Bold";
+}
+.menu-item {
+    border-bottom:1px solid #E3E6EB;
+} 
+.xxx {
+    background-color: white;
+}
+.oho {
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 10px;
+    color: black;
+}
+
+.button {
+    width: 150px;
+    color: #fff !important;
+    border-radius: 25px;
+    background: #36C5BA;
+    padding: 11px 0 12px;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none !important;
+    font-family: 'HK Grotesk Bold';
+    border: 2px solid transparent;
+}
+
+.swiper-button-prev {
+    /* color: black !important; */
+    border-radius: 9999px !important;
+    
+}
+.swiper-button-prev:after ,.swiper-button-next:after
+{
+    font-size: 23px !important;
+    content: 'prev';
+    border-radius: 9999px !important;
+    border-width: 1px;
+    /* border-color: ; */
+    color: #02363D !important;
+    padding: 15px;
+    width: 32x !important;
+    height: 45px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    background: white;
+}
+.swiper-button-next{
+    right: -14px !important;
+
+}
+.swiper-button-prev{
+    left: -14px !important;
+
+}
+.swiper-button-prev, .swiper-button-next {
+    z-index: 100000 !important; 
+}
+.abc {
+    border-top: 1px solid #DCDFE4 !important;
+    /* display: block; */
+    padding: 24px 48px 24px 12px !important;
+    width: 100%;
+    max-width: 1000px !important;
+    text-align: left;
+    font-size: 22px;
+    line-height: 28px;
+    color: #02363D !important;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+}
+.hhh {
+    border-bottom: 1px solid #DCDFE4 !important;
+padding: 16px;
+}
+.jointeam {
+    background: linear-gradient(90deg, #A8E6E1 0%, #EEC0AE 100%);
+}
+.css-1mcnwpj-MuiList-root, .css-1umppoh {
+    max-width: 800px !important;
+}
+.swiper {
+    overflow: inherit !important;
+}
+.swiper-button-disabled {
+    display: none !important;
+}
