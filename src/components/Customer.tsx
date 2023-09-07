@@ -75,7 +75,7 @@ const CustomerMobile = () => (
         <img
           src="https://static.turquoise.health/static/images/testimonial-img.cea2bc3b42a0.png"
           alt=""
-          className="w-96 h-96"
+          className="w-full "
           style={{
             borderTopRightRadius: 160,
           }}
