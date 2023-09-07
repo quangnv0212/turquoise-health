@@ -132,8 +132,8 @@ export function NavbarWithMegaMenu({ navListMenu }: { navListMenu: any[] }) {
   }, []);
   return (
     <>
-      <div className="bg-[#01363D]">
-        <Navbar className="max-w-screen-xl border-none w-full m-0 px-4 py-2 mx-auto bg-[#01363D]">
+      <div className="bg-[#01363D] py-5">
+        <Navbar className="max-w-[1232px] border-none w-full m-0 px-4 py-2 mx-auto bg-[#01363D]">
           <div className="flex items-center justify-between text-blue-gray-900">
             <div className="">
               <img

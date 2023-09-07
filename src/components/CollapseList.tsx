@@ -31,17 +31,16 @@ const dataCollapse = [
 ];
 export function CollapseList(props: ICollapseListProps) {
   const [active, setActive] = React.useState(dataCollapse[0]);
-  console.log(active);
-  return (
-    <>
+  const CollapseListDesktop = () => (
+    <div className="overflow-hidden">
       <Section
         buttonText="Search Care"
         desc="   It's your right to know the cost of healthcare. Take advantage of
-                 hospital price transparency by comparing the costs of services and
-                 providers near you."
+             hospital price transparency by comparing the costs of services and
+             providers near you."
         title=" Shop healthcare just like anything else."
       >
-        <div className="grid w-full grid-cols-2 gap-7">
+        <div className="w-full lg:pb-20 lg:grid-cols-2 lg:grid gap-7">
           <div className="w-full">
             <img src={active.img} alt="" />
           </div>
@@ -76,6 +75,52 @@ export function CollapseList(props: ICollapseListProps) {
           </div>
         </div>
       </Section>
-    </>
+    </div>
+  );
+  const CollapseListMobile = () => (
+    <Section
+      buttonText="Search Care"
+      desc="   It's your right to know the cost of healthcare. Take advantage of
+       hospital price transparency by comparing the costs of services and
+       providers near you."
+      title=" Shop healthcare just like anything else."
+    >
+      <div className="w-full lg:flex ">
+        <img src={active.img} alt="" className="w-full my-8 lg:mx-4" />
+        <List
+          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+          className=""
+        >
+          {dataCollapse.map((x) => (
+            <>
+              <ListItemButton
+                className="w-full text-2xl font-bold collapse-item"
+                onClick={() => setActive(x)}
+              >
+                {x.title}
+                {x.id === active.id ? <span>-</span> : <span>+</span>}
+              </ListItemButton>
+              <Collapse in={x.id === active.id} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                  {x.desc}
+                </List>
+              </Collapse>
+            </>
+          ))}
+        </List>
+      </div>
+    </Section>
+  );
+  return (
+    <div>
+      <div className="hidden lg:block">
+        <CollapseListDesktop />
+      </div>
+      <div className="block lg:hidden">
+        <CollapseListMobile />
+      </div>
+    </div>
   );
 }

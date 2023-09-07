@@ -66,7 +66,7 @@ const dataprovider = [
     image:
       "https://ucarecdn.com/05e498a4-07e8-4b18-acd5-3375dba6cfb5/-/resize/72x72/",
 
-    name: "Paloma Health",
+    name: "Paloma asdasdasdasdas",
     text: "New York, NY",
   },
   {
@@ -74,7 +74,7 @@ const dataprovider = [
     image:
       "https://ucarecdn.com/05e498a4-07e8-4b18-acd5-3375dba6cfb5/-/resize/72x72/",
 
-    name: "Paloma Health",
+    name: "Paloma ababab",
     text: "New York, NY",
   },
   {
@@ -90,7 +90,7 @@ const dataprovider = [
     image:
       "https://ucarecdn.com/05e498a4-07e8-4b18-acd5-3375dba6cfb5/-/resize/72x72/",
 
-    name: "Paloma Health",
+    name: "Paloma Health 111",
     text: "New York, NY",
   },
 ];
@@ -106,7 +106,7 @@ const datapayer = [
 
 export function SwiperList(props: ISwiperListProps) {
   return (
-    <div className="p-28 bg-slate-100">
+    <div className="z-10 p-5 md:px-10 md:py-10 lg:px-56 lg:py-20 bg-slate-100">
       <MySwiper
         data={dataprocedure}
         title="Browse by procedure."
@@ -115,7 +115,7 @@ export function SwiperList(props: ISwiperListProps) {
       <MySwiper
         data={dataprovider}
         title="Browse by provider."
-        buttonContent="Compare Providers"
+        buttonContent="View Services"
       />
       <MySwiper
         data={datapayer}

@@ -30,7 +30,7 @@ export function Transparency(props: ITransparencyProps) {
       title="What the health is price transparency?"
       desc="Basically, hospitals and health plans are required by law to make their prices and charges publicly available. Turquoise Health gathers and displays those rates for patients so it’s easier to make cost-conscious decisions when receiving care."
     >
-      <div className="grid grid-cols-3 gap-10">
+      <div className="gap-10 lg:pb-20 md:grid md:grid-cols-3">
         {dataList.map((x) => (
           <Cards img={x.img} title={x.title} buttonText={x.buttonText} />
         ))}
@@ -41,9 +41,9 @@ export function Transparency(props: ITransparencyProps) {
 
 const Cards = ({ img, title, buttonText }: any) => {
   return (
-    <div className="flex flex-col gap-5 p-4 bg-white border card hover:border-black">
+    <div className="flex flex-col gap-5 my-5 bg-white border lg:my-0 p-7 card hover:border-black">
       <img className="w-11 h-11" src={img} alt="" />
-      <p className="text-2xl font-bold text-[#02363D]">{title}</p>
+      <p className="text-[18px] font-bold text-[#02363D]">{title}</p>
       <p>Best way to learn is to jump right in. It's how we learned to swim.</p>
       <p className="flex font-bold underline">
         {buttonText}{" "}

@@ -40,31 +40,33 @@
 }
 .swiper-button-prev:after ,.swiper-button-next:after
 {
-    font-size: 14px !important;
+    font-size: 20px !important;
     content: 'prev';
     border-radius: 9999px !important;
     border-width: 1px;
     color: #02363D !important;
-    padding: 20px;
-    width: 20x !important;
-    height: 45px !important;
+    padding: 15px !important;
+    width: 15x !important;
+    height: 40px !important;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100000;
     background: white;
+    position: absolute !important;
+    z-index: 9999 !important;
 }
 .swiper-button-next{
-    right: -14px !important;
+    right: 6px !important;
+    position: absolute !important;
+    z-index: 9999 !important;
 
 }
 .swiper-button-prev{
-    left: -14px !important;
+    left: 10px !important;
 
 }
-.swiper-button-prev, .swiper-button-next {
-    z-index: 100000 !important; 
-}
+
 .collapse-item {
     border-top: 1px solid #DCDFE4 !important;
     padding: 24px 48px 24px 12px !important;
@@ -86,19 +88,17 @@
 .css-1mcnwpj-MuiList-root, .css-1umppoh {
     max-width: 800px !important;
 }
-.swiper {
-    overflow: inherit !important;
-}
+
 .swiper-button-disabled {
     display: none !important;
 }
 .swiper-slide:hover, .card:hover {
-    box-shadow: 0px 20px 28px -12px rgba(0, 0, 0, 0.24);
+    /* box-shadow: 0px 20px 28px -12px rgba(0, 0, 0, 0.24) */
 }
 @font-face {
     font-family: 'Tiempos Headline'; /* Tên font mà bạn muốn sử dụng */
-    src: url('/public/TiemposHeadline-Bold.otf') format('opentype'); /* Đường dẫn đến font OTF */
-    font-weight: normal;
+    src: url('/public/TiemposHeadline-Medium.otf') format('opentype'); /* Đường dẫn đến font OTF */
+    font-weight: 500;
     font-style: normal;
   }
   
@@ -116,7 +116,6 @@
 
   }
   .productPageParah {
-    width: 80%;
     font-size: 18px;
     line-height: 28px;
     color: #02363d;
@@ -129,3 +128,36 @@
     color: #02363D;
 
   }
+  .hm-banner-info{
+    margin: 0 0 40px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 490px;
+  }
+
+  .hm-banner-info-h1 {
+    margin: 0 0 28px 0;
+    line-height: 76px;
+    font-size: 64px;
+    letter-spacing: 0.5px;
+  }
+  .banner-submit-btn {
+    padding: 12px 47px !important;
+    width: unset;
+    background: #176F6F;
+    line-height: 24px;
+    margin: 0 0 0 16px;
+    border-radius: 50px !important;
+  }
+
+/* .swiper-wrapper {
+  padding: -70px !important;
+} */
+.swiper-horizontal {
+  padding: -70px !important;
+
+}
+.p-30 {
+  padding: 30px !important;
+}

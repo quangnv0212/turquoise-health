@@ -23,7 +23,7 @@ export function SearchInput() {
   const watchQuery = watch("query");
   return (
     <div className="w-full border-t-2">
-      <form className="min-w-[350px] w-full" onSubmit={onSubmitSearch}>
+      <form className="lg:min-w-[350px] w-full" onSubmit={onSubmitSearch}>
         <div
           ref={ref}
           onClick={handleClickInside}

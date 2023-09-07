@@ -24,17 +24,19 @@ export function Card({
   verify,
 }: ICardProps) {
   return (
-    <div className="flex flex-col items-center justify-center gap-5 bg-white p-5 border text-center hover:border-[#0D5256] ">
-      {title && <p className="font-semibold  card-title">{title}</p>}
-      {image && <img src={image}></img>}
+    <div className="flex flex-col items-center justify-center gap-2 bg-white p-4 px-6 border text-center hover:border-[#0D5256] lg:w-[286px] md:m-5  ">
+      {title && (
+        <p className="py-5 card-title text-[#02363D] font-semibold">{title}</p>
+      )}
+      {image && <img src={image} className="pt-7"></img>}
       {letter && (
         <p className="flex text-[#E29578] font-bold items-center justify-center w-20 h-20 text-5xl bg-[#FFDDD2] rounded-full text-orange-50">
           <span>{letter}</span>
         </p>
       )}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         {price && (
-          <p className="text-[45px] header-intro  font-bold text-[#0D5256] text-center">
+          <p className="text-[36px] header-intro pt-3 font-bold text-[#176F6F] text-center">
             {price}
           </p>
         )}
@@ -53,9 +55,10 @@ export function Card({
 
         <p className=" text-[#02363D] opacity-70">{text}</p>
       </div>
-      <button className="px-6 hover:bg-[#0D5256] hover:text-white py-2 text-[#0D5256] font-bold border rounded-3xl border-[#0D5256]">
+      <button className="px-10 w-full my-3 border-2 py-3 hover:bg-[#176F6F] hover:text-white text-[14px] text-[#176F6F] font-bold rounded-[50px] border-[#0D5256]">
         {buttonContent}
       </button>
+      {letter && <div className="h-5"></div>}
     </div>
   );
 }

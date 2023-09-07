@@ -61,7 +61,7 @@ const Cards = ({
   people: string;
 }) => {
   return (
-    <div className="flex flex-col gap-5 p-4 pb-0 border hover:border-black">
+    <div className="flex flex-col gap-5 p-4 pb-0 mt-5 border lg:my-0 hover:border-black">
       <img className="w-11 h-11" src={icon} alt="" />
       <p className="text-2xl font-bold">{title}</p>
       <p>{desc}</p>
