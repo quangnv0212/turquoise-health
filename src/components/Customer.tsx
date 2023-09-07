@@ -32,6 +32,12 @@ const CustomerDesktop = () => (
         }}
       />
     </div>
+    <div className="flex gap-3 my-10">
+      <img src="https://static.turquoise.health/static/images/wsj-logo-wht.32032801f755.svg" />
+      <img src="	https://static.turquoise.health/static/images/forbes-logo-wht.da6414ff086b.svg" />
+      <img src="https://static.turquoise.health/static/images/nyt-logo-wht.5637b97aac27.svg" />
+      <img src="https://static.turquoise.health/static/images/newHomepage-axios-logo.1deecda61f3a.svg" />
+    </div>
   </Section>
 );
 const CustomerMobile = () => (
@@ -100,14 +106,6 @@ const CustomerMobile = () => (
             procedures.
           </p>
         </div>
-        <img
-          src="https://static.turquoise.health/static/images/testimonial-img.cea2bc3b42a0.png"
-          alt=""
-          className="w-80 h-80"
-          style={{
-            borderTopRightRadius: 160,
-          }}
-        />
       </div>
     </Section>
   </>

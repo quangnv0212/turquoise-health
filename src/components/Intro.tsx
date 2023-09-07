@@ -8,10 +8,10 @@ export function Intro(props: IIntroProps) {
     <>
       <div className="bg-[#01363D] h-[664px] relative lg:px-52 lg:py-28 pb-0 text-white p-11">
         <div className="text-white md:flex md:flex-col lg:w-full md:w-full">
-          <p className="text-white header-intro hm-banner-info-h1 ">
+          <p className="text-white header-intro hm-banner-info-h1 mr-96 ">
             You can put a price on healthcare.
           </p>
-          <p className="hm-banner-info">
+          <p className="z-50 hm-banner-info">
             Just like you wouldn’t buy a car, rent an apartment, or even order
             food without knowing the cost, you shouldn’t just pay for
             healthcare.

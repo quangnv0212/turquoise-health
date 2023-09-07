@@ -36,15 +36,17 @@ export function Revenue(props: IRevenueProps) {
       desc="We welcome like-minded partners. From channel to brand and product partnerships, we’ve joined with the industry’s newest, oldest, and boldest."
       buttonText="View Partner"
     >
-      {dataList.map((x) => (
-        <Cards
-          key={x.id}
-          desc={x.desc}
-          icon={x.icon}
-          people={x.people}
-          title={x.title}
-        />
-      ))}
+      <div className="justify-center gap-7 md:grid md:grid-cols-3 md:mb-24">
+        {dataList.map((x) => (
+          <Cards
+            key={x.id}
+            desc={x.desc}
+            icon={x.icon}
+            people={x.people}
+            title={x.title}
+          />
+        ))}
+      </div>
     </Section>
   );
 }

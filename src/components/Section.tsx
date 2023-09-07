@@ -21,9 +21,9 @@ export function Section({
 }: ISectionProps) {
   const SectionDesktop = () => (
     <>
-      <div className={`${bg} lg:py-10 lg:px-28 p-14 py-20 `}>
+      <div className={`${bg} lg:py-8 lg:px-28 p-14 py-20 `}>
         <p
-          className={` mb-0 mr-40  text-6xl lg:w-7/12  ${text} header-intro lg:m-28 `}
+          className={` mb-0 mr-40  text-6xl lg:w-7/12  ${text} header-intro lg:mx-28 lg:mt-24 `}
         >
           {title}
         </p>
@@ -41,7 +41,7 @@ export function Section({
             </div>
           </div>
         </div>
-        <div className="flex flex-row lg:mx-28 gap-7">{children}</div>
+        <div className="lg:mx-28 gap-7">{children}</div>
       </div>
     </>
   );

@@ -106,7 +106,7 @@ const datapayer = [
 
 export function SwiperList(props: ISwiperListProps) {
   return (
-    <div className="z-10 p-5 md:px-10 md:py-10 lg:px-56 lg:py-20 bg-slate-100">
+    <div className="z-10 p-5 md:px-10 md:py-10 lg:px-56 bg-slate-100">
       <MySwiper
         data={dataprocedure}
         title="Browse by procedure."

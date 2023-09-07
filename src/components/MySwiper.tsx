@@ -22,7 +22,7 @@ export default function MySwiper({
 }) {
   const SwiperDesktop = () => (
     <div className="">
-      <div className="flex flex-col gap-10 my-16 pt-[60px]">
+      <div className="flex flex-col gap-10 my-4 pt-[60px]">
         <div className="flex flex-row justify-between">
           <p className="text-5xl font-bold header-intro text-[#02363D] ">
             {title}

@@ -5,7 +5,7 @@ export interface IJoinTeamProps {}
 export function JoinTeam(props: IJoinTeamProps) {
   const JoinTeamDesktop = () => (
     <div className="relative w-full mt-52">
-      <div className="flex flex-row justify-center items-center gap-6 p-10 mx-20 px-52 jointeam absolute top-[-124px] left-28">
+      <div className="flex flex-row justify-center lg:mx-56 items-center gap-6 p-10 mx-20 lg:w-[1232px] px-52 jointeam absolute top-[-124px]">
         <img
           src="https://static.turquoise.health/static/images/newHome-jobs-img.bf56ef7bdf0f.png"
           alt=""
